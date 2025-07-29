@@ -1,0 +1,10 @@
+# My Portfolio
+
+> A portfolio showcasing my work as a frontend developer.
+
+## Blog
+
+- [From Mockup to Market: My End-to-End Product Design Process](http://bo-cooper.com/blog/from-mockup-to-market): A detailed breakdown of my iterative design methodology, from initial research to final handoff, with practical tips for designers at every stage.
+- [How I Built My Design System from Scratch](http://bo-cooper.com/blog/how-i-built-my-own-design-system-from-scratch): A practical guide to creating your own design system, from initial audit to implementation, and the lessons learned along the way.
+- [The Psychology of Color in UI Design](http://bo-cooper.com/blog/psychology-of-color-in-ui-design): Exploring how strategic color choices can influence user behavior, evoke emotions, and enhance the overall user experience of digital products.
+- [The Case for Slow Design in a Fast-Paced Digital World](http://bo-cooper.com/blog/slow-design-in-fast-paced-digital-world): Why designing digital experiences that encourage users to slow down and engage deeply can lead to more meaningful interactions and better outcomes.

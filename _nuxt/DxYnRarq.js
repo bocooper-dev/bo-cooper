@@ -1,0 +1,1 @@
+import{h as s,ab as r}from"./CgSs_fxe.js";import{m as a,A as e,N as o,ac as t}from"./BOuGH_in.js";const l={base:"border-t border-default my-12"},u={__name:"ProseHr",props:{class:{type:null,required:!1}},setup(u){const p=u,c=s(),m=a(()=>r({extend:r(l),...c.uiPro?.prose?.hr||{}}));return(s,r)=>(o(),e("hr",{class:t(m.value({class:p.class}))},null,2))}};export{u as default};

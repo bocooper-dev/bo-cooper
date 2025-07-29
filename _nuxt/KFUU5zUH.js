@@ -1,0 +1,1 @@
+function e(r){return r.map(r=>r.children&&"string"!=typeof r.children?Array.isArray(r.children)?e(r.children):r.children.default?e(r.children.default()):void 0:r.children||"").join("")}function r(e,r){return Object.entries(e).reduce((e,[n,i])=>(e[n]="function"==typeof i?i({class:r?.[n]}):i,e),r||{})}export{e as g,r as t};
