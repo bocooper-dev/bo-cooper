@@ -52,7 +52,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node }}
+          version: ${{ matrix.node }}
           cache: ${{ steps.pkgman.outputs.cache }}
 
       - name: Install dependencies
@@ -63,7 +63,9 @@ jobs:
         env:
           NITRO_PRESET: github_pages
           NUXT_CONTENT_PREVIEW_API: https://api.nuxt.studio
-          NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
+          NUXT_PUBLIC_SITE_URL: ${{ secrets.NUXT_PUBLIC_SITE_URL }}
+NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
+VITE_RELEASE_STAGE: ${{ secrets.VITE_RELEASE_STAGE }}
 
       # Deployment job
       - name: Deploy 🚀
