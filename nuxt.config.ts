@@ -49,6 +49,13 @@ export default defineNuxtConfig({
 		name: 'Bo Cooper'
 	},
 
+	content: {
+		preview: {
+			dev: import.meta.env.VITE_RELEASE_STAGE === 'development',
+			api: 'https://api.nuxt.studio'
+		}
+	},
+
 	features: {
 		inlineStyles: true
 	},
