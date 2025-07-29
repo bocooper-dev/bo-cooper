@@ -11,7 +11,7 @@ export default defineNuxtConfig({
 		'@nuxtjs/sitemap',
 		'@nuxtjs/device',
 		'@nuxt/fonts',
-		'@nuxtjs/i18n',
+		// '@nuxtjs/i18n',
 		[
 			'nuxt-jsonld',
 			{
@@ -42,6 +42,12 @@ export default defineNuxtConfig({
 	},
 
 	css: ['~/assets/css/main.css'],
+
+	site: { // https://nuxtseo.com/site-config/guides/setting-site-config
+		// At a minimum, it's recommended you provide a url and name for your site.
+		url: 'http://bo-cooper.com',
+		name: 'Bo Cooper'
+	},
 
 	features: {
 		inlineStyles: true
@@ -131,8 +137,8 @@ export default defineNuxtConfig({
 	},
 
 	llms: { // https://nuxt.com/modules/llms#nuxt-content
-		domain: 'https://example.com',
-		title: 'My Application',
-		description: 'My Application Description'
+		domain: 'http://bo-cooper.com',
+		title: 'My Portfolio',
+		description: 'A portfolio showcasing my work as a frontend developer.'
 	}
 })
