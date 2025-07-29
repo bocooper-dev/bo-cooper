@@ -1,0 +1,1 @@
+import{h as s,ab as a}from"./Bfn6d-nP.js";import{m as e,A as r,N as t,P as o,ac as m}from"./BOuGH_in.js";const l={base:""},p={__name:"ProseEm",props:{class:{type:String,required:!1}},setup(p){const c=p,u=s(),n=e(()=>a({extend:a(l),...u.uiPro?.prose?.em||{}}));return(s,a)=>(t(),r("em",{class:m(n.value({class:c.class}))},[o(s.$slots,"default")],2))}};export{p as default};

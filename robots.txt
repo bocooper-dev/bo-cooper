@@ -1,6 +1,6 @@
 # START nuxt-robots (indexable)
 User-agent: *
-Disallow: 
+Disallow: /admin/
 
 Sitemap: http://bo-cooper.com/sitemap.xml
 # END nuxt-robots
