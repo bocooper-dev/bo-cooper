@@ -10,24 +10,22 @@ hero:
       color: neutral
       icon: ''
   images:
-    - src: https://picsum.photos/468/468?random=1
+    - src: /images/bo-cooper-branding-1.png
       alt: Random Image 1
-    - src: https://picsum.photos/468/468?random=2
+    - src: /images/bo-cooper-branding-2.png
       alt: Random Image 2
-    - src: https://picsum.photos/468/468?random=3
+    - src: /images/bo-cooper-branding-1.png
       alt: Random Image 3
-    - src: https://picsum.photos/468/468?random=4
+    - src: /images/bo-cooper-branding-2.png
       alt: Random Image 4
-    - src: https://picsum.photos/468/468?random=5
+    - src: /images/bo-cooper-branding-1.png
       alt: Random Image 5
-    - src: https://picsum.photos/468/468?random=6
+    - src: /images/bo-cooper-branding-2.png
       alt: Random Image 6
-    - src: https://picsum.photos/468/468?random=6
+    - src: /images/bo-cooper-branding-1.png
       alt: Random Image 6
-    - src: https://picsum.photos/468/468?random=7
+    - src: /images/bo-cooper-branding-2.png
       alt: Random Image 7
-    - src: https://picsum.photos/468/468?random=8
-      alt: Random Image 8
 about:
   title: About Me
   description: As a front-end developer and UX/UI designer with 8 years of experience, I leverage my Purdue University Computer Information Technology (Web Development concentration) degree to craft user-centered digital experiences. My approach blends creative strategy with technical expertise, transforming concepts into functional, purposeful digital products that seamlessly integrate design and technology.
@@ -46,14 +44,14 @@ experience:
       company:
         name: Where's Weed
         logo: i-simple-icons-raycast
-        url: https://raycast.com
+        url: https://wheresweed.com
         color: '#1fc36a'
     - position: Junior FE Developer
       date: 2018 - 2019
       company:
         name: Where's Weed
         logo: i-simple-icons-linear
-        url: https://linear.app
+        url: https://wheresweed.app
         color: '#1fc36a'
 testimonials:
   - quote: Bo's approach to web development completely transformed our product. He has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics.
@@ -61,22 +59,22 @@ testimonials:
       name: Sarah Chen
       description: Product Director at Bloom Finance
       avatar:
-        src: https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80
-        srcset: https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x
+        src: /images/bo-cooper-branding-2.png
+        srcset: /images/bo-cooper-branding-2.png 2x
   - quote: Working with Bo was the best decision we made for our startup. He didn't just deliver designs—he challenged our assumptions, conducted thorough user research, and created an experience that truly resonated with our audience. His expert technical knowledge of front-end development meant the handoff to others on our engineering team was seamless.
     author:
       name: Michael Rodriguez
       description: Co-founder of Wavelength Music
       avatar:
-        src: https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80
-        srcset: https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x
+        src: /images/bo-cooper-branding-2.png
+        srcset: /images/bo-cooper-branding-2.png 2x
   - quote: Bo stands out in his ability to translate complex sustainability data into intuitive interfaces. His work on EcoTrack wasn't just visually stunning—it fundamentally changed how our users interact with environmental information. He approaches each problem with both creativity and analytical rigor, which is exactly what we needed.
     author:
       name: Dr. Aisha Johnson
       description: Chief Innovation Officer at GreenTech Solutions
       avatar:
-        src: https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80
-        srcset: https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x
+        src: /images/bo-cooper-branding-2.png
+        srcset: /images/bo-cooper-branding-2.png 2x
 blog:
   title: Latest Articles
   description: Some of my recent thoughts
