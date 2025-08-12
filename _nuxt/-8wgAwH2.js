@@ -1,1 +1,0 @@
-import{h as s,ab as a}from"./DkcxcMuv.js";import{m as e,A as o,N as t,P as r,ac as l}from"./BOuGH_in.js";const p={base:""},u={__name:"ProseTbody",props:{class:{type:null,required:!1}},setup(u){const c=u,d=s(),m=e(()=>a({extend:a(p),...d.uiPro?.prose?.tbody||{}}));return(s,a)=>(t(),o("tbody",{class:l(m.value({class:c.class}))},[r(s.$slots,"default")],2))}};export{u as default};

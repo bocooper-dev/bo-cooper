@@ -1,1 +1,0 @@
-import{h as s,ab as a}from"./DkcxcMuv.js";import{m as r,A as e,N as o,P as t,ac as l}from"./BOuGH_in.js";const n={base:""},p={__name:"ProseStrong",props:{class:{type:null,required:!1}},setup(p){const u=p,c=s(),m=r(()=>a({extend:a(n),...c.uiPro?.prose?.strong||{}}));return(s,a)=>(o(),e("strong",{class:l(m.value({class:u.class}))},[t(s.$slots,"default")],2))}};export{p as default};
