@@ -1,59 +1,85 @@
-# Nuxt Portfolio Template
+# Bo Cooper — Nuxt Portfolio
 
-[![Nuxt UI Pro](https://img.shields.io/badge/Made%20with-Nuxt%20UI%20Pro-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com/pro)
-[![Deploy to NuxtHub](https://img.shields.io/badge/Deploy%20to-NuxtHub-00DC82?logo=nuxt&labelColor=020420)](https://hub.nuxt.com/new?repo=nuxt-ui-pro/portfolio)
+A content-driven portfolio built with Nuxt 4 and Nuxt UI Pro. It showcases projects, services, and engineering articles with a lightweight content model and a few interactive demos.
 
-Use this template to create your own portfolio with [Nuxt UI Pro](https://ui.nuxt.com/pro).
+## Features
+- Nuxt 4 + Nuxt UI Pro components
+- Nuxt Content for data and blog (Markdown + YAML)
+- Projects, Services, About, Blog pages
+- Blog taxonomy: tags and related links on articles
+- SEO/OG integration via @nuxtjs/seo and nuxt-og-image
+- Motion-ready (motion-v) and VueUse utilities
+- Demos page: Generative gradient shape and SVG Game Boy
 
-- [Live demo](https://portfolio-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/getting-started/installation/pro/nuxt)
+## Routes
+- / — Landing (hero, experience, testimonials, FAQ)
+- /projects — Selected work
+- /services — Offerings and packages
+- /blog — Articles; individual posts at /blog/[slug]
+- /about — Bio
+- /demos — Interactive component previews
 
-<a href="https://portfolio-template.nuxt.dev/" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3BvcnRmb2xpby10ZW1wbGF0ZS5udXh0LmRldiIsImlhdCI6MTc0NTkzNDczMX0.XDWnQoyVy3XVtKQD6PLQ8RFUwr4yr1QnVwPxRrjCrro.jpg?theme=dark">
-    <source media="(prefers-color-scheme: light)" srcset="https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3BvcnRmb2xpby10ZW1wbGF0ZS5udXh0LmRldiIsImlhdCI6MTc0NTkzNDczMX0.XDWnQoyVy3XVtKQD6PLQ8RFUwr4yr1QnVwPxRrjCrro.jpg?theme=light">
-    <img alt="Nuxt Portfolio Template" src="https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3BvcnRmb2xpby10ZW1wbGF0ZS5udXh0LmRldiIsImlhdCI6MTc0NTkzNDczMX0.XDWnQoyVy3XVtKQD6PLQ8RFUwr4yr1QnVwPxRrjCrro.jpg">
-  </picture>
-</a>
+## Content model (content.config.ts)
+- index (page): home sections (hero, about, experience, testimonials, blog, faq)
+- projects (data): title, description, image, url, tags, date (Date | string)
+- blog (page): front matter: title, description, date (Date | string), image, minRead, author, tags?, related?
+- services (page): links, offerings, packages?, process, cta?
+- about (page): content, images
 
-## Quick Start
+Blog front matter example:
 
-```bash [Terminal]
-npx nuxi init -t github:nuxt-ui-pro/portfolio
+```yaml
+---
+title: My Post
+description: Short summary
+date: 2025-08-11
+image: /images/cover.jpg
+minRead: 8
+author:
+  name: Bo Cooper
+  avatar:
+    src: /images/bo-cooper-branding-1.png
+    alt: Bo Cooper
+tags: [nuxt, vue, css]
+related:
+  - { label: "Related article", to: "/blog/another-post" }
+---
 ```
 
-## Setup
+## Project structure (high level)
+- app/pages — route pages (including /demos)
+- app/components — UI and demo components
+- content — YAML data and Markdown posts
+- public/images — static assets (e.g., anime.webp)
 
-Make sure to install the dependencies:
+## Local development
+Prereqs: Node 18+ and pnpm.
 
-```bash
+```powershell
 pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
 pnpm dev
 ```
 
-## Production
+Typecheck and lint:
 
-Build the application for production:
-
-```bash
-pnpm build
+```powershell
+pnpm typecheck
+pnpm lint
 ```
 
-Locally preview production build:
+Build and preview:
 
-```bash
+```powershell
+pnpm build
 pnpm preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Notes
+- Dates accept ISO strings or human-readable strings (e.g., "2023 – Present").
+- Tags/related in blog posts are optional and render on the post page when provided.
+- /demos includes:
+  - GenerativeGradientShape (clip-path gradient morph)
+  - Gameboy (interactive SVG; uses /images/anime.webp)
 
-## Renovate integration
-
-Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
+## License
+MIT
