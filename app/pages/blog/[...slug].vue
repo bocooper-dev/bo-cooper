@@ -48,6 +48,45 @@
 						:value="page"
 					/>
 
+					<!-- Tags -->
+					<div
+						v-if="tags?.length"
+						class="mt-8 flex flex-wrap items-center gap-2"
+					>
+						<UBadge
+							v-for="tag in tags"
+							:key="tag"
+							variant="subtle"
+							color="neutral"
+							size="sm"
+						>
+							#{{ tag }}
+						</UBadge>
+					</div>
+
+					<!-- Related links -->
+					<div
+						v-if="related?.length"
+						class="mt-6 border-t pt-4"
+					>
+						<h3 class="text-base font-medium mb-2">
+							Related
+						</h3>
+						<ul class="list-disc pl-5 text-sm">
+							<li
+								v-for="r in related"
+								:key="r.to"
+							>
+								<ULink
+									:to="r.to"
+									class="hover:underline"
+								>
+									{{ r.label }}
+								</ULink>
+							</li>
+						</ul>
+					</div>
+
 					<div class="flex items-center justify-end gap-2 text-sm text-muted">
 						<UButton
 							size="sm"
@@ -97,6 +136,11 @@ if (page.value.image) {
 
 const title = page.value?.seo?.title || page.value?.title
 const description = page.value?.seo?.description || page.value?.description
+
+// Extended meta (schema augmentation isn't reflected in current type until generated)
+type RelatedLink = { label: string, to: string }
+const tags = computed<string[]>(() => ((page.value as any)?.tags as string[]) || [])
+const related = computed<RelatedLink[]>(() => ((page.value as any)?.related as RelatedLink[]) || [])
 
 useSeoMeta({
 	title,
