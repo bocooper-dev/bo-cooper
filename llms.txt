@@ -4,7 +4,11 @@
 
 ## Blog
 
-- [From Mockup to Market: My End-to-End Product Design Process](http://bo-cooper.com/blog/from-mockup-to-market): A detailed breakdown of my iterative design methodology, from initial research to final handoff, with practical tips for designers at every stage.
-- [How I Built My Design System from Scratch](http://bo-cooper.com/blog/how-i-built-my-own-design-system-from-scratch): A practical guide to creating your own design system, from initial audit to implementation, and the lessons learned along the way.
-- [The Psychology of Color in UI Design](http://bo-cooper.com/blog/psychology-of-color-in-ui-design): Exploring how strategic color choices can influence user behavior, evoke emotions, and enhance the overall user experience of digital products.
-- [The Case for Slow Design in a Fast-Paced Digital World](http://bo-cooper.com/blog/slow-design-in-fast-paced-digital-world): Why designing digital experiences that encourage users to slow down and engage deeply can lead to more meaningful interactions and better outcomes.
+- [AI Meta-Prompting with HOP & LOP](http://bo-cooper.com/blog/ai-meta-prompting-hop-lop): Use Higher Order Prompts (HOP) and Lower Order Prompts (LOP) to structure agent context for more predictable, high-signal outputs.
+- [CSS-Only Active States in a Nuxt Blog Carousel (Tailwind + :has + Arbitrary Variants)](http://bo-cooper.com/blog/css-only-carousel-active-states): How to build rich active/previous/next card states in a carousel using pure CSS with Tailwind's arbitrary variants (group selectors, :has, sibling combinators)—no extra watchers.
+- [Improving DX with Custom Dev Components](http://bo-cooper.com/blog/dx-custom-dev-components): Build internal developer-facing Vue components (like an inline GA debug panel) to speed troubleshooting and reduce context switching.
+- [Generative Abstract Shape Gradient Blur Background (Nuxt + Vue Clip-Path)](http://bo-cooper.com/blog/generative-gradient-shapes): Build an animated, generative gradient blur background using CSS clip-path polygons with multi-anchor morphing, DX controls, and zero external libs.
+- [Interactive SVG Game Boy Component (Vue + Filters + Parallax)](http://bo-cooper.com/blog/interactive-svg-gameboy): Building an accessible, filter-rich, interactive SVG Game Boy in Vue with glow feedback, CRT mask, animated gradient, button micro-interactions, and tiny parallax.
+- [Modern Motion in Nuxt with Motion.js](http://bo-cooper.com/blog/motion-js-nuxt-animations): Practical patterns for building fluid, interruptible animations in Nuxt using Motion.js—focus on structure, performance, and accessibility.
+- [Reusable Spotlight Effect Directive for Nuxt](http://bo-cooper.com/blog/nuxt-spotlight-directive): Build a plug-and-play Vue directive that recreates Nuxt's spotlight cursor interaction for any element—accessible and performant.
+- [Scroll-Driven SVG Path Animations](http://bo-cooper.com/blog/scroll-driven-svg-path-animations): Create performant scroll-driven SVG path animations in Nuxt using IntersectionObserver + requestAnimationFrame—no heavy libs.
