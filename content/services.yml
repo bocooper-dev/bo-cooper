@@ -1,0 +1,55 @@
+title: Services
+description: I help teams ship fast, accessible Vue/Nuxt interfaces and scalable design systems.
+links:
+  - label: Book a call
+    to: https://cal.com/bo-cooper/intro
+    color: neutral
+  - label: Email me
+    to: mailto:hiring@bo-cooper.com
+    color: neutral
+offerings:
+  - title: Vue/Nuxt Architecture
+    description: SSR, routing strategy, hydration boundaries, caching, code-splitting.
+    icon: i-lucide-cpu
+  - title: Design Systems
+    description: Tokens, primitives, slots-first APIs, docs & adoption strategy.
+    icon: i-lucide-layers
+  - title: Performance & DX
+    description: Core Web Vitals, bundle budgets, build tooling, profiling & CI.
+    icon: i-lucide-gauge
+  - title: Accessibility
+    description: Semantic patterns, keyboard flows, color contrast, testing guidance.
+    icon: i-lucide-accessibility
+packages:
+  - name: Front-End Audit
+    duration: 1–2 weeks
+    from: $5k
+    includes:
+      - Performance + accessibility audit
+      - DX & architecture recommendations
+      - Prioritized action plan
+  - name: System Starter
+    duration: 3–6 weeks
+    from: $12k
+    includes:
+      - Token & architecture setup
+      - 8–12 core components
+      - Documentation & dev handoff
+  - name: Ongoing Partnership
+    duration: Monthly
+    from: $4k/mo
+    includes:
+      - Roadmap guidance
+      - Component & feature delivery
+      - Continuous perf & a11y improvements
+process:
+  - Discover
+  - Plan
+  - System & primitives
+  - Pages & integration
+  - Perf & a11y polish
+  - Launch & handoff
+cta:
+  label: Let’s talk
+  to: https://cal.com/bo-cooper/intro
+  color: neutral

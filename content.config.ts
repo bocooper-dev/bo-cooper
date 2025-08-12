@@ -47,7 +47,8 @@ export default defineContentConfig({
 				about: createBaseSchema(),
 				experience: createBaseSchema().extend({
 					items: z.array(z.object({
-						date: z.date(),
+						// Accept ISO date or human-readable string like "2023 – Present"
+						date: z.union([z.date(), z.string()]),
 						position: z.string(),
 						company: z.object({
 							name: z.string(),
@@ -82,7 +83,8 @@ export default defineContentConfig({
 				image: z.string().nonempty().editor({ input: 'media' }),
 				url: z.string().nonempty(),
 				tags: z.array(z.string()),
-				date: z.date()
+				// Accept ISO date or year string
+				date: z.union([z.date(), z.string()])
 			})
 		}),
 		blog: defineCollection({
@@ -90,7 +92,8 @@ export default defineContentConfig({
 			source: 'blog/*.md',
 			schema: z.object({
 				minRead: z.number(),
-				date: z.date(),
+				// Accept ISO date or string
+				date: z.union([z.date(), z.string()]),
 				image: z.string().nonempty().editor({ input: 'media' }),
 				author: createAuthorSchema()
 			})
@@ -113,10 +116,35 @@ export default defineContentConfig({
 				events: z.array(z.object({
 					category: z.enum(['Live talk', 'Podcast', 'Conference']),
 					title: z.string(),
-					date: z.date(),
+					// Accept ISO date or string
+					date: z.union([z.date(), z.string()]),
 					location: z.string(),
 					url: z.string().optional()
 				}))
+			})
+		}),
+		services: defineCollection({
+			type: 'page',
+			source: 'services.yml',
+			schema: z.object({
+				links: z.array(createButtonSchema()),
+				offerings: z.array(z.object({
+					title: z.string(),
+					description: z.string(),
+					icon: z.string().optional()
+				})),
+				packages: z.array(z.object({
+					name: z.string(),
+					duration: z.string(),
+					from: z.string(),
+					includes: z.array(z.string())
+				})).optional(),
+				process: z.array(z.string()),
+				cta: z.object({
+					label: z.string(),
+					to: z.string(),
+					color: z.string().optional()
+				}).optional()
 			})
 		}),
 		about: defineCollection({

@@ -30,30 +30,29 @@ export default defineAppConfig({
 	footer: {
 		credits: `Copyright © ${new Date().getFullYear()}`,
 		colorMode: false,
-		links: [{
-			'icon': 'i-simple-icons-nuxtdotjs',
-			'to': 'https://nuxt.com',
-			'target': '_blank',
-			'aria-label': 'Nuxt Website'
-		}, {
-			'icon': 'i-simple-icons-discord',
-			'to': 'https://discord.com/invite/ps2h6QT',
-			'target': '_blank',
-			'aria-label': 'Nuxt UI on Discord'
-		}, {
-			'icon': 'i-simple-icons-x',
-			'to': 'https://x.com/nuxt_js',
-			'target': '_blank',
-			'aria-label': 'Nuxt on X'
-		}, {
-			'icon': 'i-simple-icons-github',
-			'to': 'https://github.com/nuxt/ui',
-			'target': '_blank',
-			'aria-label': 'Nuxt UI on GitHub'
-		}]
+		links: [
+			{
+				'icon': 'i-simple-icons-github',
+				'to': 'https://github.com/bocooper-dev',
+				'target': '_blank',
+				'aria-label': 'GitHub'
+			},
+			{
+				'icon': 'i-simple-icons-linkedin',
+				'to': 'https://linkedin.com/in/bo-cooper',
+				'target': '_blank',
+				'aria-label': 'LinkedIn'
+			},
+			{
+				'icon': 'i-simple-icons-x',
+				'to': 'https://x.com/bo_cooper',
+				'target': '_blank',
+				'aria-label': 'X'
+			}
+		]
 	},
 
 	seo: {
-		siteName: 'Bo Cooper'
+		siteName: 'Bo Cooper | bo-cooper.com'
 	}
 })

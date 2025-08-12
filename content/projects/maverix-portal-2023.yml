@@ -1,0 +1,6 @@
+title: Maverix Customer Portal
+description: Led front-end build of authenticated portal (usage, billing, support) with component-driven Nuxt patterns and accessibility focus.
+image: /images/bo-cooper-branding-2.png
+url: https://maverixbroadband.com
+tags: ["Nuxt", "Portal", "Design System", "Accessibility"]
+date: 2023-09-01
