@@ -13,6 +13,9 @@ node_modules
 logs
 *.log
 
+# claude
+.claude.json
+
 # Misc
 .DS_Store
 .fleet
