@@ -95,7 +95,12 @@ export default defineContentConfig({
 				// Accept ISO date or string
 				date: z.union([z.date(), z.string()]),
 				image: z.string().nonempty().editor({ input: 'media' }),
-				author: createAuthorSchema()
+				author: createAuthorSchema(),
+				tags: z.array(z.string()).optional(),
+				related: z.array(z.object({
+					label: z.string(),
+					to: z.string()
+				})).optional()
 			})
 		}),
 		pages: defineCollection({
@@ -106,21 +111,6 @@ export default defineContentConfig({
 			],
 			schema: z.object({
 				links: z.array(createButtonSchema())
-			})
-		}),
-		speaking: defineCollection({
-			type: 'page',
-			source: 'speaking.yml',
-			schema: z.object({
-				links: z.array(createButtonSchema()),
-				events: z.array(z.object({
-					category: z.enum(['Live talk', 'Podcast', 'Conference']),
-					title: z.string(),
-					// Accept ISO date or string
-					date: z.union([z.date(), z.string()]),
-					location: z.string(),
-					url: z.string().optional()
-				}))
 			})
 		}),
 		services: defineCollection({
